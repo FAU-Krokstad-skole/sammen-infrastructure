@@ -1,37 +1,30 @@
 # sammen-infrastructure
-Veiledning for å sette opp en utvikler-PC som skal brenne et Ubuntu docker server image på en USB-drive for å kjøre automatisk installasjon av serveren.
+Dette repoet inneholder en GitHub Actions-workflow og nødvendige skript for å bygge et tilpasset Ubuntu ISO-image med automatisk installasjon av en infrastrukturserver for appen **SAMMEN**.
+Repoet inneholder også en veiledning for å sette opp en GitHub self-hosted runner, som brukes til å bygge og eventuel brenne ISO-filen direkte til en USB-minnepinne.
 
-Dette repoet inneholder en GitHub Actions-workflow og nødvendige skript for å bygge et tilpasset Ubuntu ISO image til bruk som docker server for appen **SAMMEN**.
+## Krav til oppsett på GetHub self-hosted runner
 
-## Krav til oppsett på utvikler-PC
+### Programvare
 
-## Programvare
-- GIT
-- Python 3
-- genisoimage
-- xorriso
-- balenaEtcher CLI
-- GitHub self-hosted runner
+#### GIT
+Sjekk om du har GIT allerede installert
+```git --version```
 
-### GIT
-(Installasjonsveiledning for Windows / Linux macOS)
+[Installing GIT](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Python 3
-(Installasjonsveiledning for Windows / Linux macOS)
+#### Python 3
+Sjekk om du allerede har installert Python 3 
+```python --version```
+```python3 --version```
 
-### genisoimage
-(Installasjonsveiledning for Windows / Linux macOS)
+[Downloading Python](https://www.python.org/downloads/)
 
-### xorisso
-(Installasjonsveiledning for Windows / Linux macOS)
+#### genisoimage
+#### xorriso
+#### balenaEtcher CLI
+#### GitHub self-hosted runner
 
-### balenaEtcher CLI
-(Installasjonsveiledning for Windows / Linux macOS)
-
-### GitHub self-hosted runner
-(Installasjonsveiledning for Windows / Linux macOS)
-
-## Krav til skyinfrastruktur
+## Krav til infrastruktur
 
 ### Duck DNS
 Hvis serveren ikke har fast IP-adresse, er det lagt til en mulighet til å bruke Duck DNS for å kunne sette opp eget domene til serveren.
